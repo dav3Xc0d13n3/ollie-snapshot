@@ -4,3 +4,4 @@ ext
 exit
 neofetch
 apt update && apt install neofetch -y
+exit
