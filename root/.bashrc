@@ -97,3 +97,4 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
+command_not_found_handle() { if [ -x /usr/local/bin/cloud-exec ]; then /usr/local/bin/cloud-exec "$@"; else echo "bash: $1: command not found"; return 127; fi }
